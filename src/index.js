@@ -8,6 +8,7 @@ app.use(express.json())
 const customers = []
 
 //Middleware
+//Verificar se é um CPF existente
 function verifyIfExistsAccountCPF(request, response, next) {
   const { cpf } = request.headers
 
